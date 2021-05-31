@@ -46,7 +46,6 @@ namespace WineProject
                 wines[i].preco = Double.Parse(Console.ReadLine());
             }
 
-
             for (int i = 0; i < wines.Length; i++)
             {
                 Console.WriteLine("Item{0}", i + 1);
@@ -88,9 +87,6 @@ namespace WineProject
                 Console.WriteLine("Quantos vinhos deseja comprar?");
                 quantidade = int.Parse(Console.ReadLine());
 
-                /*Console.WriteLine("Qual a sua distância em Km?");
-                distancia = double.Parse(Console.ReadLine());*/
-
                 valorProduto = valorProduto + wines[numVinhosComprar - 1].preco * quantidade;
                 Console.WriteLine("Preço produto: {0}", (valorProduto.ToString("N2")));
                 if (distancia > 100)
@@ -110,7 +106,6 @@ namespace WineProject
 
             Console.WriteLine("Compra Finalizada");
 
-            //wines[numVinhosComprar-1].info();
         }
     }
 }
